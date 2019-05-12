@@ -39,3 +39,5 @@ util/Win_Check_Output.txt
 *.png
 *.jpg
 *.gif
+
+keyboards/clueboard/keymaps/andrew/*
