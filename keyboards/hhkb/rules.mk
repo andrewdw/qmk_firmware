@@ -71,6 +71,7 @@ CUSTOM_MATRIX = yes    # Custom matrix file for the HHKB
 # MIDI_ENABLE = yes       # MIDI controls
 # UNICODE_ENABLE = yes    # Unicode
 # BLUETOOTH_ENABLE = yes  # Enable Bluetooth with the Adafruit EZ-Key HID
+# OUT_AUTO = yes
 
 
 # HHKB_RN42_ENABLE = yes  # Enable support for hasu's BT alt controller -- code borrowed from tmk source tree.
@@ -91,11 +92,11 @@ OPT_DEFS += -DHHKB_RN42_ENABLE
 RN42_DIR = rn42
 
 SRC +=  serial_uart.c \
-	rn42/suart.S \
-	rn42/rn42.c \
-	rn42/rn42_task.c \
-	rn42/battery.c \
-	rn42/main.c
+    rn42/suart.S \
+    rn42/rn42.c \
+    rn42/rn42_task.c \
+    rn42/battery.c \
+    rn42/main.c
 
 VPATH += $(RN42_DIR)
 
